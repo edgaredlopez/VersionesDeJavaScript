@@ -18,3 +18,22 @@ console.log(iteradorObjeto.next().value);
 console.log(iteradorObjeto.next().value);
 console.log(iteradorObjeto.next().value);
 console.log(iteradorObjeto.next().value);
+
+
+
+
+//------------------------------------------
+export function* getId() {
+    let valorinicial = 5;
+    while (true) {
+      yield valorinicial++; //Solo le sumamos 1 ya que recuerda su valor anterior
+    }
+  }
+ 
+const iterador= getId();
+console.log(iterador.next().value);
+console.log(iterador.next().value);
+console.log(iterador.next().value);
+console.log(iterador.next().value);
+console.log(iterador.next().value);
+console.log(iterador.next().value);
